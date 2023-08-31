@@ -1,0 +1,17 @@
+.List {
+    height: 500px;
+    list-style: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    &__item {
+        margin-top: 10px;
+        background-color: #f4f8ff;
+        border-radius: 5px;
+        width: 100%;
+        padding: 4px;
+    }
+}

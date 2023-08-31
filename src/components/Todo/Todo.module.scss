@@ -1,0 +1,101 @@
+.Todo {
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px #D0DAEB;
+    box-shadow: 0px 0px 2px 0px #EEF4FE;
+    width: 255px;
+    border-radius: 3px;
+    padding: 10px;
+
+    &__title {
+        display: inline-block;
+        color: #3d8fec;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.3em;
+        max-height: 55px;
+        hyphens: auto;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    &__check {
+        margin-right: 5px;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+    }
+
+    &__dates {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    &__date {
+        color: #50b810;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    &__description {
+        font-size: 13px;
+        font-weight: 400;
+        color: #555;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 15px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    &__tags {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__tag {
+        background-color: #b233a6;
+        display: inline-block;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 1px 6px 0 6px;
+        border-radius: 3px;
+        height: 20px;
+        &:last-child {
+            margin-left: 5px;
+            background-color: #ebeef6;
+            color: #616c82;
+            position: relative;
+            z-index: 1;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            &::after {
+                content: '';
+                background-color: #ebeef6;
+                width: 16px;
+                height: 16px;
+                border-radius: 3px;
+                position: absolute;
+                transform: rotate(45deg) translate(3px);
+                z-index: -1;
+                top: -0.1px;
+                right: -6px;
+            }
+        }
+    }
+
+    &__avatar {
+        width: 24px;
+        height: 24px;
+    }
+}

@@ -1,0 +1,41 @@
+.Header {
+    display: flex;
+    padding: 0 5px;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &__title {
+        color: #508810;
+        font-size: 14px;
+    }
+
+    &__addBtn {
+        margin-left: auto;
+        background-color: #d9d9d9;
+        border: none;
+        color: #3d8fec;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 2px;
+        border-radius: 2px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__counter {
+        padding: 0 2px;
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 12px;
+        border: 1px solid #7b8aab;
+        border-radius: 2px;
+        font-weight: bold;
+        color: #555;
+        vertical-align: middle;
+        height: 20px;
+    }
+}
