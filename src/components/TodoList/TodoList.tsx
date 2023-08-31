@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import { ITodo } from "../../types/types"
 import classes from './TodoList.module.scss'
 import Todo from "../Todo/Todo";
